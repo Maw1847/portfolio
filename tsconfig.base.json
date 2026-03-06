@@ -14,7 +14,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@portfolio/core": ["libs/core/src/index.ts"],
+      "@portfolio/ui": ["libs/ui/src/index.ts"],
+      "@portfolio/layout": ["libs/layout/src/index.ts"],
+      "@portfolio/features": ["libs/features/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
