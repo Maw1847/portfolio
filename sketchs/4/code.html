@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Projects: Technical Case Studies</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Navigation -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 px-6 md:px-20 py-4 bg-background-light dark:bg-background-dark sticky top-0 z-50">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-primary">
+<div class="size-6">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z"></path>
+</svg>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-[-0.015em]">Dev Portfolio</h2>
+</div>
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-primary text-sm font-semibold leading-normal" href="#">Projects</a>
+<a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+</div>
+<div class="flex flex-1 justify-end gap-4 md:gap-8">
+<label class="hidden sm:flex flex-col min-w-40 h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full overflow-hidden">
+<div class="text-slate-500 dark:text-slate-400 flex border-none bg-slate-200 dark:bg-slate-800 items-center justify-center pl-4">
+<span class="material-symbols-outlined text-xl">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 border-none bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-slate-100 focus:ring-0 h-full placeholder:text-slate-500 dark:placeholder:text-slate-400 px-3 text-base font-normal" placeholder="Search projects..." value=""/>
+</div>
+</label>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center rounded-lg h-10 px-5 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-all">
+<span>Resume</span>
+</button>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-10">
+<div class="layout-content-container flex flex-col max-w-[1200px] flex-1 px-6 md:px-10">
+<!-- Hero Section -->
+<div class="flex flex-col gap-4 mb-10">
+<h1 class="text-slate-900 dark:text-slate-100 text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em]">Technical Case Studies</h1>
+<p class="text-slate-600 dark:text-slate-400 text-lg max-w-2xl font-normal leading-relaxed">
+                            Architecture-first approach to building accessible, secure, and highly scalable products for critical infrastructure.
+                        </p>
+</div>
+<!-- Filter Tabs -->
+<div class="flex gap-3 mb-8 overflow-x-auto pb-2 scrollbar-hide">
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary text-white px-6 transition-all">
+<span class="text-sm font-semibold">All Projects</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-6 hover:bg-slate-300 dark:hover:bg-slate-700 transition-all">
+<span class="text-sm font-semibold">Accessibility</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-6 hover:bg-slate-300 dark:hover:bg-slate-700 transition-all">
+<span class="text-sm font-semibold">Architecture</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-6 hover:bg-slate-300 dark:hover:bg-slate-700 transition-all">
+<span class="text-sm font-semibold">Security</span>
+</button>
+</div>
+<!-- Project Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Project 1 -->
+<div class="group flex flex-col gap-4 p-4 rounded-xl bg-slate-100/50 dark:bg-slate-800/30 border border-slate-200 dark:border-slate-800 hover:border-primary/50 transition-all duration-300">
+<div class="w-full aspect-video rounded-lg overflow-hidden relative">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent z-10"></div>
+<div class="w-full h-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-primary/40">sports_esports</span>
+</div>
+<div class="absolute inset-0 bg-cover bg-center opacity-80 mix-blend-overlay" data-alt="Abstract interface showing accessibility patterns for gaming" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD11xHqml3wA0qdb47HeikspqQacEcRxRtnGQa93Uyo5FDaxnZxgtEFLsh0CEJ0YHbqRoPjc6ZxD1vCHRTxIq3EsUQ4OcQtCUy31p92l09Qabve8wM9q8kpf0oBwm31bf53vh2WXxfxu1Zk3jIb3fjTdOw9arW_4ZjRUcSNpYe2avzGhGVQciwH--f7ErWtI2nREImEjE5e8oC-XG8C1VFK-8Lh99CcisNEsibl-ZxAocM6qfbXENYcSoF21DMhu4deCUKk09M2vIz_");'></div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex flex-wrap gap-2 mb-1">
+<span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-primary/10 text-primary border border-primary/20">Accessibility</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 border border-slate-300 dark:border-slate-600">Architecture</span>
+</div>
+<h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold leading-tight group-hover:text-primary transition-colors">Accessible Gaming Entry Point</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-relaxed">
+                                    Refactoring core input systems to support screen readers and adaptive controllers without latency. Implemented low-level hook abstractions for cross-platform hardware compatibility.
+                                </p>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="group flex flex-col gap-4 p-4 rounded-xl bg-slate-100/50 dark:bg-slate-800/30 border border-slate-200 dark:border-slate-800 hover:border-primary/50 transition-all duration-300">
+<div class="w-full aspect-video rounded-lg overflow-hidden relative">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent z-10"></div>
+<div class="w-full h-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-primary/40">account_tree</span>
+</div>
+<div class="absolute inset-0 bg-cover bg-center opacity-80 mix-blend-overlay" data-alt="Complex network graph visualization for knowledge systems" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBPRdzQmwSO2k-2w9-OD-uk6Wyd_oCI1Ybp_xDEOTUoo0HEYTvw62PH-9BpDgACvyEvbXjjqA2mq1jAS1lWzLwOwlIncKQiwZNv4TzYBuAgZkMhc79yo0SZ38XJv4R2DVxb0ZlLuLk-hSZ71ZbN8uGS4k5PqCdrzG77xDo_NSe3U529R9KRNlJ8_Biwq8dWCpj1IlNPY2n4kRKsTB4yhAsKMnIOLEyn8bp3zhdVQ9Xv9Ji2KyjA8D50Rkfalr_2cpIbv6uxgPm7yN7Q");'></div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex flex-wrap gap-2 mb-1">
+<span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-primary/10 text-primary border border-primary/20">Architecture</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 border border-slate-300 dark:border-slate-600">Security</span>
+</div>
+<h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold leading-tight group-hover:text-primary transition-colors">Knowledge Management System</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-relaxed">
+                                    Building a distributed graph-based storage solution with sub-100ms retrieval for complex data nodes. Optimized for high-integrity audit trails and RBAC-driven access.
+                                </p>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="group flex flex-col gap-4 p-4 rounded-xl bg-slate-100/50 dark:bg-slate-800/30 border border-slate-200 dark:border-slate-800 hover:border-primary/50 transition-all duration-300">
+<div class="w-full aspect-video rounded-lg overflow-hidden relative">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent z-10"></div>
+<div class="w-full h-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-primary/40">shopping_bag</span>
+</div>
+<div class="absolute inset-0 bg-cover bg-center opacity-80 mix-blend-overlay" data-alt="Data visualization showing high traffic ecommerce analytics" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAIbkM3Parn9O_rq58-sDbtgGe6ywGMv1TaJ8rF0xISR7XqSojGg4OCdzEnU8AYVWRLoMnyciKzDBVLehoEAiTWuIJ-FoL14WpjgglTtCLaI5AGCv5plakn_vCCD5YMfu_4yZHeiizhUh9IHvVvLVpzmVGz43d59vjaaQA9EJ728CdkOfjmlYwy0DSbLMXaQgGBwnDUDT6co2lMoTJbJzk38XOAYGjPI0uEcs5oM9YZaIiHuDU-v4kcoAobS3JWLkLH1ayvYhEG4kx_");'></div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex flex-wrap gap-2 mb-1">
+<span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-primary/10 text-primary border border-primary/20">Architecture</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400 border border-slate-300 dark:border-slate-600">Security</span>
+</div>
+<h3 class="text-slate-900 dark:text-slate-100 text-xl font-bold leading-tight group-hover:text-primary transition-colors">Scalable E-commerce Flagship</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-relaxed">
+                                    High-concurrency infrastructure handling 50k+ req/s with a focus on atomic inventory consistency. Leveraged event-driven patterns to decouple checkout pipelines.
+                                </p>
+</div>
+</div>
+</div>
+<!-- Call to Action -->
+<div class="@container mt-20">
+<div class="flex flex-col items-center justify-center gap-6 px-4 py-16 bg-slate-100 dark:bg-slate-800/50 rounded-2xl border border-slate-200 dark:border-slate-800">
+<div class="flex flex-col gap-3 text-center max-w-[720px]">
+<h2 class="text-slate-900 dark:text-slate-100 text-3xl md:text-4xl font-black leading-tight tracking-[-0.033em]">
+                                    Interested in the technical deep-dives?
+                                </h2>
+<p class="text-slate-600 dark:text-slate-400 text-base md:text-lg font-normal leading-normal">
+                                    I'm available for senior-level engineering roles and architectural consulting. Let's discuss your next critical product.
+                                </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 w-full justify-center max-w-md">
+<button class="flex-1 flex cursor-pointer items-center justify-center rounded-lg h-12 px-8 bg-primary text-white text-base font-bold transition-all hover:scale-[1.02] active:scale-95 shadow-lg shadow-primary/20">
+<span>Get in Touch</span>
+</button>
+<button class="flex-1 flex cursor-pointer items-center justify-center rounded-lg h-12 px-8 bg-slate-200 dark:bg-slate-700 text-slate-900 dark:text-slate-100 text-base font-bold transition-all hover:bg-slate-300 dark:hover:bg-slate-600">
+<span class="material-symbols-outlined mr-2 text-xl">code</span>
+<span>GitHub</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="border-t border-slate-200 dark:border-slate-800 py-10 px-6 md:px-20 bg-background-light dark:bg-background-dark">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 max-w-[1200px] mx-auto">
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium">© 2024 Senior Developer Portfolio. Built with Performance in Mind.</p>
+<div class="flex gap-6">
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" href="#">LinkedIn</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" href="#">GitHub</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors" href="#">Twitter</a>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>

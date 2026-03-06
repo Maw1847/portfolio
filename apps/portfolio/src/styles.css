@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-main: theme('colors.primary.50');
+    --text-main: theme('colors.primary.900');
+    --text-muted: theme('colors.primary.600');
+    --accent: theme('colors.accent.600');
+  }
+
+  html {
+    @apply h-full scroll-smooth;
+  }
+
+  body {
+    @apply h-full bg-[var(--bg-main)] text-[var(--text-main)] font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-bold tracking-tight;
+  }
+
+  h1 { @apply text-4xl md:text-5xl lg:text-6xl; }
+  h2 { @apply text-3xl md:text-4xl; }
+  h3 { @apply text-2xl md:text-3xl; }
+
+  p {
+    @apply leading-relaxed;
+  }
+
+  a {
+    @apply text-[var(--accent)] transition-colors duration-200 hover:text-accent-700 underline underline-offset-4 decoration-1;
+  }
+
+  /* Accessibility: Visible Focus States */
+  :focus-visible {
+    @apply outline outline-2 outline-offset-4 outline-accent-500;
+  }
+
+  /* Focus fallback for older browsers */
+  :focus {
+    @apply outline-none;
+  }
+}
+
+@layer components {
+  .container-narrow {
+    @apply max-w-3xl mx-auto px-6 sm:px-8;
+  }
+
+  .container-standard {
+    @apply max-w-5xl mx-auto px-6 sm:px-8;
+  }
+
+  .container-wide {
+    @apply max-w-7xl mx-auto px-6 sm:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+}

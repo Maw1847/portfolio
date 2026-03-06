@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#137fec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<title>Philosophy: Engineering Discipline</title>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Navigation -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 px-10 py-4 max-w-[1200px] mx-auto w-full">
+<div class="flex items-center gap-4">
+<div class="text-primary size-6">
+<span class="material-symbols-outlined text-3xl">architecture</span>
+</div>
+<h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-[-0.015em]">Philosophy: Engineering Discipline</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">Architecture</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">CI/CD</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">Testing</a>
+<a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">Security</a>
+</nav>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center rounded-lg h-10 px-5 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span>Download CV</span>
+</button>
+</div>
+</header>
+<main class="flex-1 max-w-[960px] mx-auto w-full px-6 py-12">
+<!-- Hero Section -->
+<section class="mb-16">
+<div class="@container">
+<div class="bg-cover bg-center flex flex-col justify-end overflow-hidden rounded-xl min-h-[320px] relative border border-slate-200 dark:border-slate-800" data-alt="Abstract blueprint of digital infrastructure and circuitry." style='background-image: linear-gradient(180deg, rgba(16, 25, 34, 0.2) 0%, rgba(16, 25, 34, 0.9) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBxFRMJN0-G1SU-bx9VuykXpwWZhZ-2e3iXyN1KkVbKhGRGQR4IY0tFWIpniyMzFAIpWS1rHhhJQFWp9PsYJVh_gSZkBD5sfQpP-gC5_lMsi-zwM9gW_q8_V_DaNxsYfmcm5u4mUpf0ahYlr9jwOcjtAJulrBRXMgY-QAQbh15vhGFaaUnCDjSBuRO7ADvGyoE8Syau_o7LB4bA4_bLp6Ot6a8eoVchUnsKHPUSmlQqw0GKx8tD6CVjnXoJ5kHJwhW8Y-louxpAkbjh");'>
+<div class="p-8">
+<h1 class="text-white text-5xl font-black tracking-tight mb-4">Engineering as a Discipline</h1>
+<p class="text-slate-300 text-xl max-w-2xl">A commitment to critical products, accessibility, and architectural integrity over ephemeral trends.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Major Quote -->
+<section class="mb-20 text-center border-y border-slate-200 dark:border-slate-800 py-12">
+<h2 class="text-primary italic text-3xl md:text-4xl font-light leading-relaxed mb-4">
+                    "Simplicity is the prerequisite for reliability."
+                </h2>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium uppercase tracking-widest">— Edsger W. Dijkstra</p>
+</section>
+<!-- Principles Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
+<!-- Principle: CI/CD -->
+<div class="space-y-4">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined">sync_alt</span>
+<h3 class="text-xl font-bold">Continuous Integration</h3>
+</div>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                        CI is not just a tool; it is a cultural commitment to feedback. I believe in small, frequent commits that are automatically validated. The pipeline is the source of truth—if the build is red, the factory stops. This discipline ensures that master is always deployable and friction is minimized.
+                    </p>
+</div>
+<!-- Principle: Testing -->
+<div class="space-y-4">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined">verified_user</span>
+<h3 class="text-xl font-bold">The Testing Pyramid</h3>
+</div>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Testing is the bedrock of confidence. I advocate for a balanced pyramid: robust unit tests for logic, integration tests for boundaries, and surgical E2E tests for critical user journeys. Tests should be deterministic and serve as live documentation for the system's behavior.
+                    </p>
+</div>
+<!-- Principle: DDD -->
+<div class="space-y-4">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined">account_tree</span>
+<h3 class="text-xl font-bold">Domain Driven Design</h3>
+</div>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Software complexity stems from the domain, not the technology. I focus on Ubiquitous Language and Bounded Contexts to ensure technical implementation mirrors business reality. Clean architecture patterns ensure the core domain remains decoupled from external frameworks.
+                    </p>
+</div>
+<!-- Principle: Security -->
+<div class="space-y-4">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined">security</span>
+<h3 class="text-xl font-bold">Secure Delivery</h3>
+</div>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Security is not a checkbox at the end of a cycle; it is a fundamental design requirement. Shift-left security means integrating static analysis, secret scanning, and dependency audits directly into the developer workflow, ensuring safety by construction.
+                    </p>
+</div>
+</div>
+<!-- Philosophy Deep Dive -->
+<section class="bg-primary/10 dark:bg-primary/5 rounded-2xl p-8 md:p-12 mb-20">
+<div class="flex flex-col md:flex-row gap-8 items-start">
+<div class="flex-1">
+<h2 class="text-3xl font-bold mb-6">Pragmatism Over Dogma</h2>
+<div class="prose dark:prose-invert max-w-none text-slate-700 dark:text-slate-300 space-y-4">
+<p>
+                                In an industry that moves at a breakneck pace, the most valuable skill is discerning between a revolutionary tool and a temporary fad. I prioritize long-term maintainability and accessibility. 
+                            </p>
+<p>
+                                Every line of code added is a liability. My approach is to solve problems with the least amount of infrastructure possible. This "Lean Engineering" mindset reduces cognitive load for the team and operational risk for the business.
+                            </p>
+</div>
+</div>
+<div class="w-full md:w-64 space-y-6">
+<div class="border-l-4 border-primary pl-4">
+<h4 class="font-bold text-sm uppercase tracking-wider text-slate-500 mb-2">Key Metric</h4>
+<p class="text-2xl font-black">MTTR &amp; CFR</p>
+<p class="text-xs text-slate-500 mt-1">Focusing on recovery and failure rates.</p>
+</div>
+<div class="border-l-4 border-primary pl-4">
+<h4 class="font-bold text-sm uppercase tracking-wider text-slate-500 mb-2">Core Stack</h4>
+<p class="text-slate-700 dark:text-slate-300 text-sm">Distributed Systems, Event-Driven Architecture, Type-Safe Environments.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final Statement -->
+<section class="text-center mb-12">
+<div class="inline-flex items-center justify-center size-16 rounded-full bg-primary mb-6">
+<span class="material-symbols-outlined text-white text-3xl">terminal</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">Let's build something resilient.</h3>
+<p class="text-slate-500 dark:text-slate-400 mb-8 max-w-md mx-auto">I am currently looking for roles where architectural integrity and engineering discipline are valued as much as delivery speed.</p>
+<div class="flex justify-center gap-4">
+<button class="bg-primary text-white px-8 py-3 rounded-lg font-bold hover:opacity-90 transition-opacity">Get In Touch</button>
+<button class="border border-slate-300 dark:border-slate-700 px-8 py-3 rounded-lg font-bold hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">Read Case Studies</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="border-t border-slate-200 dark:border-slate-800 py-10">
+<div class="max-w-[1200px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-2 text-slate-500 dark:text-slate-400 text-sm">
+<span class="material-symbols-outlined text-base">copyright</span>
+<span>2024 Engineering Portfolio. Built with discipline.</span>
+</div>
+<div class="flex gap-6">
+<a class="text-slate-500 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">link</span></a>
+<a class="text-slate-500 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">code</span></a>
+<a class="text-slate-500 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>
