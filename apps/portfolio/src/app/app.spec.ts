@@ -21,4 +21,11 @@ describe('App', () => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     expect((app as any).title).toEqual('portfolio');
   });
+
+  it('should render the test heading', () => {
+    const fixture = TestBed.createComponent(App);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('h1')?.textContent).toContain('Tailwind CSS Initialized');
+  });
 });
